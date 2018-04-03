@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qpc1.newquestion.QuestionFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:background="#ffff"
+            android:text="1.Cau hoi 1" />
+        <RadioGroup
+            android:id="@+id/radioGroupResult"
+            android:layout_width="match_parent"
+            android:background="#ffff"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuestion">
+            <RadioButton
+                android:id="@+id/rbResultA"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/tvQuestion"
+                android:layout_alignTop="@+id/radioGroupResult"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:button="@null"
+                android:buttonTint="@android:color/holo_green_dark"
+                android:singleLine="false"
+                android:text="A. Dap an A" />
+            <TextView
+                android:id="@+id/tvLine1"
+                android:background="#b6d5e1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp" />
+
+            <RadioButton
+                android:button="@null"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rbResultB"
+                android:text="B. Dap an B"
+                android:background="#ffff" />
+            <TextView
+                android:id="@+id/tvLine2"
+                android:background="#b6d5e1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp" />
+
+            <RadioButton
+                android:button="@null"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rbResultC"
+                android:text="C. Dap an C" />
+            <TextView
+                android:id="@+id/tvLine3"
+                android:background="#b6d5e1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp" />
+            <RadioButton
+                android:id="@+id/rbResultD"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:button="@null"
+                android:text="D. Dap an D" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvExplain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#ff002f"
+            android:background="#fff"
+            android:layout_below="@id/radioGroupResult"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

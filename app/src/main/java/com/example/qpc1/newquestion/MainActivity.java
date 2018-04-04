@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initListOfQuestions() {
         mQuestions = new ArrayList<>();
-        mQuestions.add(new Question(0,"1. 1111","A. aaaa","B. bbbb","C. cccc","D.dddd",2,"Giải thích"));
+        mQuestions.add(new Question(0,"1. 1111","A. aaaa","B. bbbb","C. cccc","D. dddd",2,"Giải thích"));
         mQuestions.add(new Question(1,"2. 2222","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",3,"Giải thích"));
         mQuestions.add(new Question(2,"3. 3333","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",2,"Giải thích"));
         mQuestions.add(new Question(3,"4. 4444","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",1,"Giải thích"));

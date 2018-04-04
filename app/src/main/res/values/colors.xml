@@ -10,4 +10,6 @@
     <color name="colorWhiteBackgound">#ffffff</color>
     <color name="colorLine">#b6d5e1</color>
     <color name="colorDefault">#ffffff</color>
+    <color name="colorUpload">#34ec34</color>
+    <color name="colorResult">#beece4</color>
 </resources>

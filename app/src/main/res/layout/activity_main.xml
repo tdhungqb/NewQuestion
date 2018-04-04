@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@color/ColorBackground"
+    android:background="@color/colorBackground"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPaper"
-        android:background="@color/ColorBackground"
+        android:background="@color/colorBackground"
         android:layout_marginLeft="@dimen/activity_margin"
         android:layout_marginRight="@dimen/activity_margin"
         android:layout_marginTop="@dimen/activity_margin"

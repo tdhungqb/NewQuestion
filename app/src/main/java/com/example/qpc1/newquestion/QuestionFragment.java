@@ -72,10 +72,10 @@ public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedCh
     }
 
     private void setColor() {
-        mRbResultA.setBackgroundColor(Color.WHITE);
-        mRbResultB.setBackgroundColor(Color.WHITE);
-        mRbResultC.setBackgroundColor(Color.WHITE);
-        mRbResultD.setBackgroundColor(Color.WHITE);
+        mRbResultA.setBackgroundResource(R.color.colorDefault);
+        mRbResultB.setBackgroundResource(R.color.colorDefault);
+        mRbResultC.setBackgroundResource(R.color.colorDefault);
+        mRbResultD.setBackgroundResource(R.color.colorDefault);
     }
 
     @Override
@@ -88,72 +88,72 @@ public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedCh
         switch (index) {
             case 0:
                 if (mRbResultA.getText().equals(getAnswer())) {
-                    mRbResultA.setBackgroundColor(0x8588d0e7);
+                    mRbResultA.setBackgroundResource(R.color.colorCorrect);
                 } else {
-                    mRbResultA.setBackgroundColor(0xFFF49F81);
+                    mRbResultA.setBackgroundResource(R.color.colorIncorect);
                     switch (mQuestion.getCorrectResult()) {
                         case 1:
-                            mRbResultB.setBackgroundColor(0x8588d0e7);
+                            mRbResultB.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 2:
-                            mRbResultC.setBackgroundColor(0x8588d0e7);
+                            mRbResultC.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 3:
-                            mRbResultD.setBackgroundColor(0x8588d0e7);
+                            mRbResultD.setBackgroundResource(R.color.colorCorrect);
                             break;
                     }
                 }
                 break;
             case 2:
                 if (mRbResultB.getText().equals(getAnswer())) {
-                    mRbResultB.setBackgroundColor(0x8588d0e7);
+                    mRbResultB.setBackgroundResource(R.color.colorCorrect);
                 } else {
-                    mRbResultB.setBackgroundColor(0xFFF49F81);
+                    mRbResultB.setBackgroundResource(R.color.colorIncorect);
                     switch (mQuestion.getCorrectResult()) {
                         case 0:
-                            mRbResultA.setBackgroundColor(0x8588d0e7);
+                            mRbResultA.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 2:
-                            mRbResultC.setBackgroundColor(0x8588d0e7);
+                            mRbResultC.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 3:
-                            mRbResultD.setBackgroundColor(0x8588d0e7);
+                            mRbResultD.setBackgroundResource(R.color.colorCorrect);
                             break;
                     }
                 }
                 break;
             case 4:
                 if (mRbResultC.getText().equals(getAnswer())) {
-                    mRbResultC.setBackgroundColor(0x8588d0e7);
+                    mRbResultC.setBackgroundResource(R.color.colorCorrect);
                 } else {
-                    mRbResultC.setBackgroundColor(0xFFF49F81);
+                    mRbResultC.setBackgroundResource(R.color.colorIncorect);
                     switch (mQuestion.getCorrectResult()) {
                         case 0:
-                            mRbResultA.setBackgroundColor(0x8588d0e7);
+                            mRbResultA.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 1:
-                            mRbResultB.setBackgroundColor(0x8588d0e7);
+                            mRbResultB.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 3:
-                            mRbResultD.setBackgroundColor(0x8588d0e7);
+                            mRbResultD.setBackgroundResource(R.color.colorCorrect);
                             break;
                     }
                 }
                 break;
             case 6:
                 if (mRbResultD.getText().equals(getAnswer())) {
-                    mRbResultD.setBackgroundColor(0x8588d0e7);
+                    mRbResultD.setBackgroundResource(R.color.colorCorrect);
                 } else {
-                    mRbResultD.setBackgroundColor(0xFFF49F81);
+                    mRbResultD.setBackgroundResource(R.color.colorIncorect);
                     switch (mQuestion.getCorrectResult()) {
                         case 0:
-                            mRbResultA.setBackgroundColor(0x8588d0e7);
+                            mRbResultA.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 1:
-                            mRbResultB.setBackgroundColor(0x8588d0e7);
+                            mRbResultB.setBackgroundResource(R.color.colorCorrect);
                             break;
                         case 2:
-                            mRbResultC.setBackgroundColor(0x8588d0e7);
+                            mRbResultC.setBackgroundResource(R.color.colorCorrect);
                             break;
                     }
                 }

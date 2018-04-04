@@ -5,7 +5,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,7 @@ import android.widget.RadioButton;
  * A simple {@link Fragment} subclass.
  */
 public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedChangeListener {
-    private com.example.qpc1.newquestion.Question mQuestion;
+    private Question mQuestion;
     private RadioGroup mRadioGroup;
     private TextView mTvQuestion, mTvExplain;
     private RadioButton mRbResultA, mRbResultB, mRbResultC, mRbResultD;
@@ -42,11 +41,11 @@ public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedCh
         mRbResultC = mView.findViewById(R.id.rbResultC);
         mRbResultD = mView.findViewById(R.id.rbResultD);
         mRadioGroup.setOnCheckedChangeListener(this);
-        mTvExplain.setVisibility(View.INVISIBLE);
+        mTvExplain.setVisibility(View.GONE);
     }
 
-    public void getQuestions(com.example.qpc1.newquestion.Question questions) {
-        mQuestion = questions;
+    public void getQuestions(Question question) {
+        mQuestion = question;
     }
 
     private void setData() {
@@ -161,5 +160,4 @@ public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedCh
                 break;
         }
     }
-
 }

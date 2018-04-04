@@ -6,18 +6,18 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import java.util.List;
 
 public class PaperAdapter extends FragmentStatePagerAdapter {
-    public List<Question> mQuestion ;
+    private List<Question> mQuestions ;
 
-    public PaperAdapter(FragmentManager fm, List<Question> mQuestion) {
+    public PaperAdapter(FragmentManager fm, List<Question> question) {
         super(fm);
-        this.mQuestion = mQuestion;
+        this.mQuestions = question;
     }
 
     @Override
     public Fragment getItem(int position) {
         if (position < 5) {
             QuestionFragment questionFragment = QuestionFragment.newInstance();
-            questionFragment.getQuestions(mQuestion.get(position));
+            questionFragment.getQuestions(mQuestions.get(position));
             return questionFragment;
         } else
             return new ResultFragment();
@@ -27,5 +27,4 @@ public class PaperAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return 6;
     }
-
 }

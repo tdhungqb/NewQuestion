@@ -81,5 +81,4 @@ public class Question {
     public void setExplain(String explain) {
         this.explain = explain;
     }
-
 }

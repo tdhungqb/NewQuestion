@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private List<com.example.qpc1.newquestion.Question> mQuestion;
+    private List<Question> mQuestions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         ViewPager mViewPager = findViewById(R.id.viewPaper);
         FragmentManager fragmentManager = getSupportFragmentManager();
-        PaperAdapter paperAdapter = new PaperAdapter(fragmentManager,mQuestion);
+        PaperAdapter paperAdapter = new PaperAdapter(fragmentManager,mQuestions);
         mViewPager.setAdapter(paperAdapter);
     }
 
@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initListOfQuestions() {
-        mQuestion = new ArrayList<>();
-        mQuestion.add(new Question(0,"1. 1111","A. aaaa","B. bbbb","C. cccc","D.dddd",2,"Giải thích"));
-        mQuestion.add(new Question(1,"2. 2222","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",3,"Giải thích"));
-        mQuestion.add(new Question(2,"3. 3333","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",2,"Giải thích"));
-        mQuestion.add(new Question(3,"4. 4444","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",1,"Giải thích"));
-        mQuestion.add(new Question(4,"5. 5555","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",0,"Giải thích"));
+        mQuestions = new ArrayList<>();
+        mQuestions.add(new Question(0,"1. 1111","A. aaaa","B. bbbb","C. cccc","D.dddd",2,"Giải thích"));
+        mQuestions.add(new Question(1,"2. 2222","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",3,"Giải thích"));
+        mQuestions.add(new Question(2,"3. 3333","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",2,"Giải thích"));
+        mQuestions.add(new Question(3,"4. 4444","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",1,"Giải thích"));
+        mQuestions.add(new Question(4,"5. 5555","A. aaaaa","B. bbbbb","C. ccccc","D. ddddd",0,"Giải thích"));
     }
 
     @Override
@@ -61,5 +61,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

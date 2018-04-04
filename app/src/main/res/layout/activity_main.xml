@@ -6,17 +6,12 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPaper"
-        android:background="#e2dbdb"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:background="@color/ColorBackground"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginBottom="@dimen/activity_margin"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </android.support.v4.view.ViewPager>
-
-
-
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

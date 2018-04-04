@@ -8,6 +8,7 @@
         app:showAsAction="always"/>
     <item android:id="@+id/about"
         android:title="About"
+        android:icon="@drawable/logo"
         app:showAsAction="never"/>
 
 </menu>

@@ -6,87 +6,12 @@
     tools:context="com.example.qpc1.newquestion.ResultFragment">
 
     <TextView
+        android:id="@+id/tvResult"
         android:background="@drawable/custom_textview"
-        android:text="1"
         android:gravity="center"
-        android:id="@+id/tvOne"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="2"
-        android:gravity="center"
-        android:id="@+id/tvTwo"
-        android:layout_marginTop="30dp"
-        android:layout_toRightOf="@id/tvOne"
-        android:layout_marginLeft="50dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="3"
-        android:gravity="center"
-        android:id="@+id/tvThree"
-        android:layout_marginTop="30dp"
-        android:layout_toRightOf="@id/tvTwo"
-        android:layout_marginLeft="50dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="4"
-        android:gravity="center"
-        android:id="@+id/tvFour"
-        android:layout_marginTop="30dp"
-        android:layout_toRightOf="@id/tvThree"
-        android:layout_marginLeft="50dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
-
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="5"
-        android:gravity="center"
-        android:id="@+id/tvFive"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_below="@id/tvOne"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"/>
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="6"
-        android:gravity="center"
-        android:id="@+id/tvSix"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/tvTwo"
-        android:layout_toRightOf="@id/tvFive"
-        android:layout_marginLeft="50dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="7"
-        android:gravity="center"
-        android:id="@+id/tvSeven"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/tvThree"
-        android:layout_toRightOf="@id/tvSix"
-        android:layout_marginLeft="50dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
-    <TextView
-        android:background="@drawable/custom_textview"
-        android:text="8"
-        android:gravity="center"
-        android:id="@+id/tvEight"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/tvFour"
-        android:layout_toRightOf="@id/tvSeven"
-        android:layout_marginLeft="50dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
 
 </RelativeLayout>

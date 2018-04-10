@@ -7,5 +7,5 @@
         android:width="120dp"/>
     <stroke android:color="@color/colorBackground"
         android:width="1dp"/>
-
+    
 </shape>

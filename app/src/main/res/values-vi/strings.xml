@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewQuestion</string>
+    <string name="question">Câu hỏi</string>
+    <string name="resultA">A.Đáp án thứ 1 câu hỏi </string>
+    <string name="resultB">B.Đáp án thứ 1 câu hỏi</string>
+    <string name="resultC">C.Đáp án thứ 1 câu hỏi</string>
+    <string name="resultD">D.Đáp án thứ 1 câu hỏi</string>
+    <string name="explain">Giải thích</string>
+    <string name="totalResult">Kết quả</string>
+    <string name="submit">Xác nhận</string>
+</resources>

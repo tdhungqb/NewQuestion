@@ -3,7 +3,10 @@ package com.example.qpc1.newquestion;
 public class Question {
     private int id;
     private String question;
-    private String resultA, resultB, resultC, resultD;
+    private String resultA;
+    private String resultB;
+    private String resultC;
+    private String resultD;
     private int correctResult;
     private String explain;
 

@@ -13,8 +13,8 @@ public class ResultAdapter  extends BaseAdapter{
     private Context mContext;
     private int mLayout;
 
-    public ResultAdapter(List<Result> result, Context context, int layout) {
-        this.mResults = result;
+    public ResultAdapter(List<Result> results, Context context, int layout) {
+        this.mResults = results;
         this.mContext = context;
         this.mLayout = layout;
     }
@@ -38,19 +38,19 @@ public class ResultAdapter  extends BaseAdapter{
         TextView tvResult;
     }
     @Override
-    public View getView(int position, View mView, ViewGroup parent) {
+    public View getView(int position, View view, ViewGroup parent) {
         ViewHolder viewHolder;
-        if (mView == null) {
+        if (view == null) {
             LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
-            mView = inflater.inflate(mLayout,null);
+            view = inflater.inflate(mLayout,null);
             viewHolder = new ViewHolder();
-            viewHolder.tvResult = mView.findViewById(R.id.tvResult);
-            mView.setTag(viewHolder);
+            viewHolder.tvResult = view.findViewById(R.id.tvResult);
+            view.setTag(viewHolder);
         } else {
-            viewHolder = (ViewHolder) mView.getTag();
+            viewHolder = (ViewHolder) view.getTag();
         }
         Result result = mResults.get(position);
         viewHolder.tvResult.setText(result.getResult());
-        return mView;
+        return view;
    }
 }

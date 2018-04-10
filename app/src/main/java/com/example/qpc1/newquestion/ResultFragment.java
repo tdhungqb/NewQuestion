@@ -14,8 +14,8 @@ import java.util.List;
  */
 public class ResultFragment extends Fragment {
     private List<Result> mResults;
-    private GridView mGvResult;
     private View mView;
+
     public ResultFragment() {
         // Required empty public constructor
     }
@@ -24,23 +24,22 @@ public class ResultFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        mView =  inflater.inflate(R.layout.fragment_result, container, false);
+        mView = inflater.inflate(R.layout.fragment_result, container, false);
         initListOfResults();
-        initView();
+        initViews();
         return mView;
-
     }
 
     private void initListOfResults() {
         mResults = new ArrayList<>();
-        for (int i = 1; i<= 20 ; i++) {
+        for (int i = 1; i <= 20; i++) {
             mResults.add(new Result("" + i));
         }
     }
 
-    private void initView() {
-        mGvResult = (GridView)mView.findViewById(R.id.gvResult);
-        ResultAdapter resultAdapter = new ResultAdapter(mResults,getContext(),R.layout.gridview_result);
+    private void initViews() {
+        GridView mGvResult = mView.findViewById(R.id.gvResult);
+        ResultAdapter resultAdapter = new ResultAdapter(mResults, getContext(), R.layout.gridview_result);
         mGvResult.setAdapter(resultAdapter);
     }
 }

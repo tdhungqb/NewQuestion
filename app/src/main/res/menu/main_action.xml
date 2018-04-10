@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/timer"
+        android:checked="true"
         android:title="00:00"
         app:showAsAction="always"/>
     <item android:id="@+id/logo"

@@ -1,6 +1,5 @@
 package com.example.qpc1.newquestion;
 
-import android.graphics.Color;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.os.Bundle;
@@ -15,7 +14,6 @@ import android.widget.RadioButton;
  */
 public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedChangeListener {
     private Question mQuestion;
-    private RadioGroup mRadioGroup;
     private TextView mTvQuestion, mTvExplain;
     private RadioButton mRbResultA, mRbResultB, mRbResultC, mRbResultD;
     private View mView;
@@ -35,7 +33,7 @@ public class QuestionFragment extends Fragment implements RadioGroup.OnCheckedCh
     private void initViews() {
         mTvQuestion = mView.findViewById(R.id.tvQuestion);
         mTvExplain = mView.findViewById(R.id.tvExplain);
-        mRadioGroup = mView.findViewById(R.id.radioGroupResult);
+        RadioGroup mRadioGroup = mView.findViewById(R.id.radioGroupResult);
         mRbResultA = mView.findViewById(R.id.rbResultA);
         mRbResultB = mView.findViewById(R.id.rbResultB);
         mRbResultC = mView.findViewById(R.id.rbResultC);

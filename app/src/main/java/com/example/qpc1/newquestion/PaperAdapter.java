@@ -8,14 +8,14 @@ import java.util.List;
 public class PaperAdapter extends FragmentStatePagerAdapter {
     private List<Question> mQuestions ;
 
-    public PaperAdapter(FragmentManager fm, List<Question> question) {
+    public PaperAdapter(FragmentManager fm, List<Question> questions) {
         super(fm);
-        this.mQuestions = question;
+        this.mQuestions = questions;
     }
 
     @Override
     public Fragment getItem(int position) {
-        if (position < 5) {
+        if (position < 20) {
             QuestionFragment questionFragment = QuestionFragment.newInstance();
             questionFragment.getQuestions(mQuestions.get(position));
             return questionFragment;
@@ -25,6 +25,6 @@ public class PaperAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 6;
+        return 21;
     }
 }

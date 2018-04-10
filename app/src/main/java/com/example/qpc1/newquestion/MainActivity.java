@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -79,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 handler.postDelayed(this, 1000);
-
             }
         }, 1000);
         return super.onCreateOptionsMenu(menu);

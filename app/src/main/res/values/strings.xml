@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NewQuestion</string>
+    <string name="question">Question</string>
+    <string name="resultA">A.Answer 1 for question</string>
+    <string name="resultB">B.Answer 2 for question</string>
+    <string name="resultC">C.Answer 3 for question</string>
+    <string name="resultD">D.Answer 4 for question</string>
+    <string name="explain">Explain</string>
+    <string name="totalResult">Result</string>
+    <string name="submit">SUBMIT</string>
 </resources>

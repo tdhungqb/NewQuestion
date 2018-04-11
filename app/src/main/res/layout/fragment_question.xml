@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qpc1.newquestion.QuestionFragment">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:background="@color/colorWhiteBackgound"
+            android:text="@string/question" />
+        <RadioGroup
+            android:id="@+id/radioGroupResult"
+            android:background="@color/colorWhiteBackgound"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuestion">
+            <RadioButton
+                android:id="@+id/rbResultA"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:button="@null"
+                android:text="@string/resultA" />
+            <TextView
+                android:id="@+id/tvLineOne"
+                android:background="@color/colorLine"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp" />
+            <RadioButton
+                android:button="@null"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rbResultB"
+                android:text="@string/resultB" />
+            <TextView
+                android:id="@+id/tvLineTwo"
+                android:background="@color/colorLine"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp" />
+            <RadioButton
+                android:button="@null"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rbResultC"
+                android:text="@string/resultC" />
+            <TextView
+                android:id="@+id/tvLineThree"
+                android:background="@color/colorLine"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp" />
+            <RadioButton
+                android:id="@+id/rbResultD"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:button="@null"
+                android:text="@string/resultD" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tvExplain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:background="@color/colorWhiteBackgound"
+            android:layout_below="@id/radioGroupResult"
+            android:text="@string/explain"/>
+
+</RelativeLayout>
